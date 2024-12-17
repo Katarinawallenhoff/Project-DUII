@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+}
+
+
+#homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+#top{
+    display: flex;
+    justify-content: center;
+}
+
+#number-container{
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);  /* 19 columns, each takes equal space */
+    grid-template-rows: repeat(5, 1fr);      /* 5 rows, each takes equal height */
+    gap: 5px;                                /* Space between grid items */
+    width: 100%;                             /* Full width of the parent container */
+    height: 400px; 
+    margin-top: 100px;                         /* Full height of the viewport */
+    box-sizing: border-box;
+
+}
+
+.number-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 10px;
+}
+
