@@ -14,14 +14,22 @@
 
     <main>
         <p>How many numbers in the grid?</p> 
-        <div>
-            <input id="remove" type="text">
+        <div id="standardContainer">
+            <input id="howMany" type="text" value="95">
+            <button>create</button>
         </div>
     </main>
+    
+    <!--The part that is unique to the page -->
     <div>
-
+        <button>New Random Number</button>
+        <input type="text">
+        <button>remove</button>
+        <input type="text">
     </div>
 
+    <div id="numberContainer"></div>
+    <script src="../common.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

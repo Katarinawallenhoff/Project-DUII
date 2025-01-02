@@ -1,16 +1,18 @@
 document.title = "Numbers::Remove";
 
-let theNum = document.getElementById("remove");
-let bodyEl = document.body;
+const inputNumb = document.getElementById("howMany");
+const remButton = document.querySelector("button");
+const container = document.getElementById("numberContainer");
 
-theNum.addEventListener("keydown", function(e) {
-    // Check if the pressed key is "Enter"
-    if (e.key === "Enter") {
-        let number = theNum.value; // Get the input value
-        let newDiv = document.createElement("h1"); // Create a new <h1> element
-        newDiv.textContent = number; // Set its content to the input value
-        bodyEl.appendChild(newDiv); // Append the <h1> to the body
+inputNumb.value = 95;
 
-        theNum.value = ""; // Clear the input field after appending
+remButton.addEventListener("click", function() {
+    const count = +inputNumb.value; 
+    if (count > 0 && count < 100) {
+        container.innerHTML = ""; 
+        createNumberBoxes(getRandomNumbersArray(count));
     }
 });
+
+
+
