@@ -16,29 +16,45 @@ function getRandomNumber(){
 }
 
 
-firstButton.addEventListener("click", function(){
+firstButton.addEventListener("click", function() {
     let aRandomNumber = getRandomNumber();
     firstInput.value = `${aRandomNumber}`;
 
     const boxes = document.querySelectorAll('.numberBox');
 
-
-     for (let box of boxes) {
-
-        if(box.textContent == firstInput.value){
-
-            box.style.backgroundColor = "yellow";
-        }else{
-            
-            box.style.backgroundColor = "lightgray";
+    for (let box of boxes) {
+        if (box.textContent == firstInput.value) {
+            box.style.backgroundColor = "rgba(255, 255, 0, 1)"; 
+        } else {
+            box.style.backgroundColor = "rgba(211, 211, 211, 1)"; 
         }
 
-        if(box.textContent == "X"){
-            box.style.backgroundColor = "red";
-         }
-     }
-   
+        if (box.textContent == "X") {
+            box.style.backgroundColor = "rgba(255, 0, 0, 1)"; 
+        }
+
+        box.addEventListener("mouseover", function() {
+            if (box.textContent == firstInput.value) {
+                box.style.backgroundColor = "rgba(255, 255, 0, 0.3)"; 
+            } else if (box.textContent == "X") {
+                box.style.backgroundColor = "rgba(255, 0, 0, 0.3)"; 
+            } else {
+                box.style.backgroundColor = "rgba(211, 211, 211, 0.3)"; 
+            }
+        });
+
+        box.addEventListener("mouseout", function() {
+            if (box.textContent == firstInput.value) {
+                box.style.backgroundColor = "rgba(255, 255, 0, 1)"; 
+            } else if (box.textContent == "X") {
+                box.style.backgroundColor = "rgba(255, 0, 0, 1)"; 
+            } else {
+                box.style.backgroundColor = "rgba(211, 211, 211, 1)"; 
+            }
+        });
+    }
 });
+
 
 
 secondButton.addEventListener("click", function(){
@@ -77,6 +93,5 @@ secondButton.addEventListener("click", function(){
 
         secondInput.value = `${firstInput.value} was removed ${counter} times`;
     }
-   
-    
+ 
 });

@@ -1,1 +1,1 @@
-document.title = "Numbers::sum";
+document.title = "Numbers::Sum";
