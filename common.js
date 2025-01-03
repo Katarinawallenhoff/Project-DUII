@@ -1,5 +1,7 @@
-
-const numberCont = document.getElementById("numberContainer");
+const inputNumb = document.getElementById("howMany");
+const numButton = document.querySelector("button");
+const container = document.getElementById("numberContainer");
+inputNumb.value = 95;
 
 function getRandomNumbersArray(count = 95) {
     const numbers = [];
@@ -11,9 +13,8 @@ function getRandomNumbersArray(count = 95) {
 
 let randomNumber = getRandomNumbersArray();
 
-
 function createNumberBoxes(numbers) {
-    const container = document.getElementById("numberContainer");
+    
 
     numbers.forEach((number) => {
         const box = document.createElement("div");
@@ -26,12 +27,6 @@ const randomNumbers = getRandomNumbersArray();
 createNumberBoxes(randomNumbers);
 
 
-const inputNumb = document.getElementById("howMany");
-const numButton = document.querySelector("button");
-const container = document.getElementById("numberContainer");
-
-inputNumb.value = 95;
-
 numButton.addEventListener("click", function() {
     const count = +inputNumb.value; 
     if (count > 0 && count < 100) {
@@ -39,6 +34,8 @@ numButton.addEventListener("click", function() {
         createNumberBoxes(getRandomNumbersArray(count));
     }
 });
+
+
 
 
 
