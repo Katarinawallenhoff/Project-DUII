@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="top">
         <a href="../index.html">Home</a>
     </div>
 
-    <div id="number-container"></div>
+    <main>
+        <p>How many numbers in the grid?</p> 
+        <div id="standardContainer">
+            <input id="howMany" type="text" value="95">
+            <button>create</button>
+        </div>
+    </main>
+
+    <div id="flexContainer">
+        <div id="numberContainer"></div>
+    </div>
+
+<script src="../common.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

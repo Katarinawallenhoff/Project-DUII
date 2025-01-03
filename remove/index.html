@@ -16,19 +16,21 @@
         <p>How many numbers in the grid?</p> 
         <div id="standardContainer">
             <input id="howMany" type="text" value="95">
-            <button>create</button>
+            <button>Create</button>
         </div>
     </main>
     
     <!--The part that is unique to the page -->
-    <div>
+    <div id="remove">
         <button>New Random Number</button>
-        <input type="text">
-        <button>remove</button>
-        <input type="text">
+        <input id="firstInput" ="text">
+        <button>Remove</button>
+        <input id="secondInput" ="text">
     </div>
 
-    <div id="numberContainer"></div>
+    <div id="flexContainer">
+        <div id="numberContainer"></div>
+    </div>
     <script src="../common.js"></script>
     <script src="index.js"></script>
 </body>

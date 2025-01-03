@@ -1,18 +1,18 @@
 document.title = "Numbers::Remove";
 
-const inputNumb = document.getElementById("howMany");
-const remButton = document.querySelector("button");
-const container = document.getElementById("numberContainer");
+let firstInput = document.getElementById("firstInput");
+let secondInput = document.getElementById("secondInput");
 
-inputNumb.value = 95;
+secondInput.value = "-";
+firstInput.value = "-";
 
-remButton.addEventListener("click", function() {
-    const count = +inputNumb.value; 
-    if (count > 0 && count < 100) {
-        container.innerHTML = ""; 
-        createNumberBoxes(getRandomNumbersArray(count));
-    }
-});
+
+
+
+
+
+
+
 
 
 

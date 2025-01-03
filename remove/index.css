@@ -1,8 +1,18 @@
-main{
+#remove{
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    height: 30px;
     gap: 10px;
-    font-size: 20px;
+
 }
+
+#firstInput{
+    width: 50px;
+}
+
+#secondInput{
+    width: 250px;
+}
+
 

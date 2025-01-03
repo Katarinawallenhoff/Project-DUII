@@ -26,6 +26,21 @@ const randomNumbers = getRandomNumbersArray();
 createNumberBoxes(randomNumbers);
 
 
+const inputNumb = document.getElementById("howMany");
+const numButton = document.querySelector("button");
+const container = document.getElementById("numberContainer");
+
+inputNumb.value = 95;
+
+numButton.addEventListener("click", function() {
+    const count = +inputNumb.value; 
+    if (count > 0 && count < 100) {
+        container.innerHTML = ""; 
+        createNumberBoxes(getRandomNumbersArray(count));
+    }
+});
+
+
 
 
 

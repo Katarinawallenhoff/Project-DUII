@@ -2,6 +2,13 @@ body{
     margin: 0;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
 
 #homepage{
     display: flex;
@@ -16,11 +23,16 @@ body{
 }
 
 #howMany{
-    width: 40%;
+    width: 50px;
 }
 
 input{
     text-align: center;
+}
+
+#flexContainer{
+    display: flex;
+    justify-content: center;
 }
 
 #numberContainer{
@@ -29,7 +41,7 @@ input{
     grid-template-columns: repeat(19, 50px);
     grid-template-rows: repeat(5, 50px);
     gap: 3px;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 
@@ -40,6 +52,7 @@ input{
     align-items: center;
     color: black;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 #standardContainer{
