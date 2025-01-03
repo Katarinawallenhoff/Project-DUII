@@ -28,7 +28,14 @@ firstButton.addEventListener("click", function(){
         if(box.textContent == firstInput.value){
 
             box.style.backgroundColor = "yellow";
+        }else{
+            
+            box.style.backgroundColor = "lightgray";
         }
+
+        if(box.textContent == "X"){
+            box.style.backgroundColor = "red";
+         }
      }
    
 });
