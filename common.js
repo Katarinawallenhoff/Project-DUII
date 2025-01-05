@@ -29,7 +29,7 @@ createNumberBoxes(randomNumbers);
 
 numButton.addEventListener("click", function() {
     const count = +inputNumb.value; 
-    if (count > 0 && count < 100) {
+    if (count > 0) {
         container.innerHTML = ""; 
         createNumberBoxes(getRandomNumbersArray(count));
     }
