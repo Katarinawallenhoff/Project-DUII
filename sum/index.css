@@ -1,0 +1,17 @@
+#sumBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#sumOfAll{
+    height: 20px;
+    width: 80px;
+}
+
+#sumOfMa{
+    height: 20px;
+    width: 80px;
+}
+

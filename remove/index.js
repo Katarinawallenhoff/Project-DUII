@@ -15,7 +15,6 @@ function getRandomNumber(){
 
 }
 
-
 firstButton.addEventListener("click", function() {
     let aRandomNumber = getRandomNumber();
     firstInput.value = `${aRandomNumber}`;
@@ -28,11 +27,9 @@ firstButton.addEventListener("click", function() {
         } else {
             box.style.backgroundColor = "rgba(211, 211, 211, 1)"; 
         }
-
         if (box.textContent == "X") {
             box.style.backgroundColor = "rgba(255, 0, 0, 1)"; 
         }
-
         box.addEventListener("mouseover", function() {
             if (box.textContent == firstInput.value) {
                 box.style.backgroundColor = "rgba(255, 255, 0, 0.3)"; 
@@ -42,7 +39,6 @@ firstButton.addEventListener("click", function() {
                 box.style.backgroundColor = "rgba(211, 211, 211, 0.3)"; 
             }
         });
-
         box.addEventListener("mouseout", function() {
             if (box.textContent == firstInput.value) {
                 box.style.backgroundColor = "rgba(255, 255, 0, 1)"; 
@@ -55,7 +51,14 @@ firstButton.addEventListener("click", function() {
     }
 });
 
+const createbutton = document.getElementById("create");
 
+numButton.addEventListener("click", function(){
+
+    firstInput.value = "-";
+    secondInput.value = "-";
+
+});
 
 secondButton.addEventListener("click", function(){
 
@@ -64,7 +67,7 @@ secondButton.addEventListener("click", function(){
     let counter = 0;
 
     for(let box of boxes){
-        
+
         if(box.textContent == firstInput.value){
 
             box.style.backgroundColor = "red";
@@ -72,26 +75,21 @@ secondButton.addEventListener("click", function(){
             box.style.color = "darkred";
 
             counter += 1;
-
-        }
-    
+        }  
     }
 
     for(let box of boxes){
-
         if(box.textContent !== firstInput.value){
 
             secondInput.value = "Nothing to remove";
         }
     }
-
     if(0 < counter && 1.5 > counter){
-        secondInput.value = `${firstInput.value} was removed ${counter} time`;
+        secondInput.value = `${firstInput.value} removed ${counter} time`;
     }
-
     if(1 < counter){
 
-        secondInput.value = `${firstInput.value} was removed ${counter} times`;
+        secondInput.value = `${firstInput.value} removed ${counter} times`;
     }
  
 });
