@@ -1,0 +1,15 @@
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#notInPlace{
+    height: 50px;
+    width: 350px;
+}
+
+#repeated{
+    width: 350px;
+}
