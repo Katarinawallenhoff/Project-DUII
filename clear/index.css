@@ -1,0 +1,9 @@
+#centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fillClear{
+    padding: 5px 10px;
+}
