@@ -1,4 +1,4 @@
-document.title = "Numbers::Remove";
+document.title = "Numbers:: Remove";
 
 const firstInput = document.getElementById("firstInput");
 const secondInput = document.getElementById("secondInput");

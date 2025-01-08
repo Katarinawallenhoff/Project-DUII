@@ -12,6 +12,7 @@ function clear() {
     const boxes = document.querySelectorAll('.numberBox');
 
     for (let box of boxes) {
+
         box.addEventListener("mouseover", function() {
             if (box.style.backgroundColor === "red") {
                 box.style.color = "orange";

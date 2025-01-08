@@ -70,5 +70,8 @@ input{
     width: 40%;
 }
 
+button{
+    cursor: pointer;
+}
 
 

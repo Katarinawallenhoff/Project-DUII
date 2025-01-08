@@ -19,6 +19,7 @@ function createNumberBoxes(numbers) {
     numbers.forEach((number) => {
         const box = document.createElement("div");
         box.classList.add("numberBox");
+        box.style.cursor = "pointer";
         box.textContent = number; 
         container.appendChild(box); 
     });
