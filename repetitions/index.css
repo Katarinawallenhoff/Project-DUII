@@ -6,10 +6,19 @@
 }
 
 #notInPlace{
-    height: 50px;
+    height: 70px;
     width: 350px;
+    border: 1px solid black;
+    overflow-wrap: break-word;
+    padding: 10px;
+    
 }
 
 #repeated{
     width: 350px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

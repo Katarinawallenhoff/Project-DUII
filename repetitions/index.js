@@ -46,7 +46,7 @@ function markNumbers(){
         result += `${key}, `;
     }
 
-    firstInput.value = `${result} (Repeated ${mostRepeated} times)`;
+    firstInput.textContent = `${result} (Repeated ${mostRepeated} times)`;
 
 
     for(let key in mostRepeatedNum){
@@ -70,14 +70,14 @@ function markNumbers(){
 
     for (let j = 0; j < numbers.length; j++) {
         if (repeatAr.indexOf(numbers[j]) === -1) { 
-            result2 += numbers[j] + ",";  
+            result2 += " " + numbers[j] + ",";  
         }
     }
 
-    secondInput.value = `${result2}`;
+    secondInput.textContent = `${result2}`;
 
 
-}
+};
 
 markNumbers();
 
