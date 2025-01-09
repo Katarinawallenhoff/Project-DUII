@@ -10,11 +10,24 @@ function findNumbers(number){
 
     const boxes = document.querySelectorAll('.numberBox');
 
-    let firstArray = [];
+    for(let box of boxes){
+        box.style.backgroundColor = "lightgray";
+    }
 
     for(let box of boxes){
 
-        firstArray.push(parseFloat(box.textContent));
+        for(let box2 of boxes){
+
+            if(box !== box2 && parseFloat(box.textContent) + parseFloat(box2.textContent) === number){
+
+                box.style.backgroundColor = "lightgreen";
+                box2.style.backgroundColor = "lightgreen";
+
+                return;
+
+            }
+        }
+
     }
 
     
