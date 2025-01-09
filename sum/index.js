@@ -10,20 +10,17 @@ function startNumber(){
 
     const boxes = document.querySelectorAll('.numberBox');
 
-    for(let box of boxes){
-
         sumOfA = 0;
 
-    for(let box of boxes){
+             for(let box of boxes){
 
-        sumOfA += parseFloat(box.textContent);
-    }
+            sumOfA += parseFloat(box.textContent);
+            }
     
-    firstInput.value = (sumOfA);
+        firstInput.value = (sumOfA);
 
-    }
+ }
     
-}
 
 startNumber();
 

@@ -30,13 +30,6 @@ function findNumbers(number){
 
     }
 
-    
-
-
-
-
-
-
 }
 
 findButton.addEventListener("click", function(){
