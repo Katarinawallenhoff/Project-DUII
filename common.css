@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url(Rubik_Vinyl/RubikVinyl-Regular.ttf) format('truetype');
+}
+
+
+
 body{
     margin: 0;
 }
@@ -15,11 +22,13 @@ main{
     flex-direction: row;
     justify-content: center;
     gap: 5px;
+    font-family: 'MyCustomFont';
 }
 
 #top{
     display: flex;
     justify-content: center;
+    font-family: 'MyCustomFont';
 }
 
 #howMany{
@@ -73,5 +82,7 @@ input{
 button{
     cursor: pointer;
 }
+
+
 
 
