@@ -35,3 +35,8 @@ function findNumbers(number){
 findButton.addEventListener("click", function(){
     findNumbers(parseFloat(addInput.value));
 })
+
+
+numButton.addEventListener("click", function(){
+    findNumbers();
+});

@@ -14,7 +14,6 @@ function getRandomNumbersArray(count = 95) {
 let randomNumber = getRandomNumbersArray();
 
 function createNumberBoxes(numbers) {
-    
 
     numbers.forEach((number) => {
         const box = document.createElement("div");
@@ -24,6 +23,7 @@ function createNumberBoxes(numbers) {
         container.appendChild(box); 
     });
 }
+
 const randomNumbers = getRandomNumbersArray();
 createNumberBoxes(randomNumbers);
 

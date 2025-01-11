@@ -1,12 +1,21 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url(Rubik_Vinyl/RubikVinyl-Regular.ttf) format('truetype');
+    src: url(Bungee_Shade/BungeeShade-Regular.ttf) format('truetype');
 }
 
+
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
 
 body{
     margin: 0;
+    background: linear-gradient(to bottom, rgb(220, 173, 217), rgba(255, 255, 255, 255));
+    height: 100vh;
 }
 
 main{
@@ -21,7 +30,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     font-family: 'MyCustomFont';
 }
 
@@ -29,6 +38,11 @@ main{
     display: flex;
     justify-content: center;
     font-family: 'MyCustomFont';
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 #howMany{
@@ -83,6 +97,21 @@ button{
     cursor: pointer;
 }
 
+#linkstowebs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 50px;
+    font-family: 'MyCustomFont';
+}
+
+#linkstowebs a{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 5);
+}
 
 
 
