@@ -5,19 +5,18 @@ const secondInput = document.getElementById("secondInput");
 const firstButton = document.getElementById("first");
 const secondButton = document.getElementById("second");
 
-
 secondInput.value = "-";
 firstInput.value = "-";
 
 function getRandomNumber(){
 
     return Math.floor(Math.random() * 100);
-
 }
 
 firstButton.addEventListener("click", function() {
     let aRandomNumber = getRandomNumber();
     firstInput.value = `${aRandomNumber}`;
+    secondInput.value = "-";
 
     const boxes = document.querySelectorAll('.numberBox');
 
@@ -54,30 +53,23 @@ firstButton.addEventListener("click", function() {
 const createbutton = document.getElementById("create");
 
 numButton.addEventListener("click", function(){
-
     firstInput.value = "-";
     secondInput.value = "-";
-
+    createHomeButton();
 });
 
 secondButton.addEventListener("click", function(){
-
     const boxes = document.querySelectorAll('.numberBox');
-
     let counter = 0;
-
     for(let box of boxes){
-
         if(box.textContent == firstInput.value){
 
             box.style.backgroundColor = "red";
             box.textContent = "X";
             box.style.color = "darkred";
-
             counter += 1;
         }  
     }
-
     for(let box of boxes){
         if(box.textContent !== firstInput.value){
 
@@ -91,5 +83,4 @@ secondButton.addEventListener("click", function(){
 
         secondInput.value = `${firstInput.value} removed ${counter} times`;
     }
- 
 });

@@ -2,17 +2,13 @@ document.title = "Numbers:: Clear";
 
 let theButton = document.getElementById("fillClear");
 
-
 function randomizer(){
 
    return Math.floor(Math.random() * 100);
 }
-
 function clear() {
     const boxes = document.querySelectorAll('.numberBox');
-
     for (let box of boxes) {
-
         box.addEventListener("mouseover", function() {
             if (box.style.backgroundColor === "red") {
                 box.style.color = "orange";
@@ -21,7 +17,6 @@ function clear() {
                 box.style.backgroundColor = "blue";
             }
         });
-
         box.addEventListener("mouseout", function() {
             if (box.style.backgroundColor === "orange") {
                 box.style.backgroundColor = "red";
@@ -30,7 +25,6 @@ function clear() {
                 box.style.backgroundColor = "lightgray";
             }
         });
-
         box.addEventListener("click", function() {
             if (box.style.backgroundColor === "blue") {
                 box.style.color = "orange";
@@ -55,11 +49,7 @@ function clear() {
 }
 
 clear();
-
-
-
-
 numButton.addEventListener("click", function(){
     clear();
-
+    createHomeButton();
 });

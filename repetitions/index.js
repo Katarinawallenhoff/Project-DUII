@@ -1,4 +1,4 @@
-document.title = "Numbers::repetitions";
+document.title = "Numbers:: Repetitions";
 
 let firstInput = document.getElementById("repeated");
 let secondInput = document.getElementById("notInPlace");
@@ -8,12 +8,9 @@ function markNumbers(){
     const boxes = document.querySelectorAll('.numberBox');
 
     let repeatAr = [];
-
     for(let box of boxes){
-
         repeatAr.push(parseFloat(box.textContent));
     }
-
     const repeatedNum = {};
     let mostRepeated = 0;
 
@@ -24,13 +21,11 @@ function markNumbers(){
             repeatedNum[repeatAr[i]]++;
         }
     }
-
     for(let key in repeatedNum){
         if(repeatedNum[key]>mostRepeated){
             mostRepeated = repeatedNum[key];
         }
     }
-
     let mostRepeatedNum = {};
 
     for(let key in repeatedNum){
@@ -45,9 +40,7 @@ function markNumbers(){
 
         result += `${key}, `;
     }
-
     firstInput.textContent = `${result} (Repeated ${mostRepeated} times)`;
-
 
     for(let key in mostRepeatedNum){
         for(let box of boxes){
@@ -75,13 +68,12 @@ function markNumbers(){
     }
 
     secondInput.textContent = `${result2}`;
-
-
 };
 
 markNumbers();
 
 numButton.addEventListener("click", function(){
     markNumbers();
+    createHomeButton();
     
 })

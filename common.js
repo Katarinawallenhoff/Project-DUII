@@ -1,7 +1,20 @@
 const inputNumb = document.getElementById("howMany");
 const numButton = document.querySelector("button");
 const container = document.getElementById("numberContainer");
+const topPart = document.getElementById("top");
 inputNumb.value = 95;
+
+
+function createHomeButton(){
+
+    topPart.innerHTML = "";
+    let homeLink = document.createElement("a");
+    topPart.appendChild(homeLink);
+    homeLink.href = "../index.html";
+    homeLink.textContent = "Home";
+}
+
+createHomeButton();
 
 function getRandomNumbersArray(count = 95) {
     const numbers = [];
@@ -10,8 +23,6 @@ function getRandomNumbersArray(count = 95) {
     }
     return numbers;
 }
-
-let randomNumber = getRandomNumbersArray();
 
 function createNumberBoxes(numbers) {
 
